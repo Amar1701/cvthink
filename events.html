@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    
+    <!-- Embedded CSS Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            background-image: url('img/techeventbg.jpg'); /* Replace with your background image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for navbar */
+            padding: 10px 0;
+            z-index: 1000; /* Ensure navbar is above other content */
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .navbar .sidenav {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .sidenav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .sidenav ul li {
+            margin-right: 20px;
+        }
+
+        .navbar .sidenav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 100px auto 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Light background color for readability */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for container */
+        }
+
+        .event {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .event:hover {
+            transform: translateY(-5px);
+        }
+
+        .event h3 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .event p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .event-description {
+            font-style: italic;
+            color: #777;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .event {
+                padding: 15px;
+            }
+            .event h3 {
+                font-size: 20px;
+            }
+            .event p {
+                font-size: 14px;
+            }
+        }
+    </style>
+    
+    <!-- Bootstrap CSS (optional) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome Icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+
+
+<div class="container mt-4">
+    <h2>Upcoming Events</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="event">
+                <img src="img/event1.jpg" alt="Event 1 Image" style="width: 100%; max-width: 100%; display: block; margin-bottom: 10px;">
+                <h3>Event Name 1</h3>
+                <p><strong>Date & Time:</strong> [Date & Time]</p>
+                <p><strong>Venue:</strong> [Venue Details]</p>
+                <p class="event-description">[Brief description of the event]</p>
+                <p><strong>Registration:</strong> <a href="[Registration Link]" target="_blank">Register Now</a></p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="event">
+                <img src="img/event1.jpg" alt="Event 2 Image" style="width: 100%; max-width: 100%; display: block; margin-bottom: 10px;">
+                <h3>Event Name 2</h3>
+                <p><strong>Date & Time:</strong> [Date & Time]</p>
+                <p><strong>Venue:</strong> [Venue Details]</p>
+                <p class="event-description">[Brief description of the event]</p>
+                <p><strong>Registration:</strong> <a href="[Registration Link]" target="_blank">Register Now</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <h2>Past Events</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="event">
+                <img src="img/event1.jpg" alt="Event 3 Image" style="width: 100%; max-width: 100%; display: block; margin-bottom: 10px;">
+                <h3>Event Name 3</h3>
+                <p><strong>Date & Time:</strong> [Date & Time]</p>
+                <p><strong>Venue:</strong> [Venue Details]</p>
+                <p class="event-description">[Brief description of the event]</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="event">
+                <img src="img/event1.jpg" alt="Event 4 Image" style="width: 100%; max-width: 100%; display: block; margin-bottom: 10px;">
+                <h3>Event Name 4</h3>
+                <p><strong>Date & Time:</strong> [Date & Time]</p>
+                <p><strong>Venue:</strong> [Venue Details]</p>
+                <p class="event-description">[Brief description of the event]</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
